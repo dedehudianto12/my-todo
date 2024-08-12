@@ -3,10 +3,14 @@ package main
 import (
 	"fmt"
 	"log"
+	"my-todo/pkg/db"
 	"net/http"
 )
 
 func main() {
+
+	db := db.InitDB()
+	defer db.Close()
 
 	PORT := ":8080"
 
