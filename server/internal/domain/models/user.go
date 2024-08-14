@@ -13,5 +13,5 @@ type User struct {
 type Register struct {
 	Username     string    `json:"username"`
 	Email        string    `json:"email"`
-	PasswordHash string    `json:"-"`
+	Password 	string    `json:"password"`
 }
